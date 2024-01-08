@@ -133,6 +133,7 @@ export function parseDate(value, dateFormat, locale, strictParsing, minDate) {
 export { isDate };
 
 export function isValid(date, minDate) {
+  console.log('this is from messidagod fork');
   minDate = minDate ? minDate : new Date("1/1/1000");
   return isValidDate(date) && !isBefore(date, minDate);
 }
